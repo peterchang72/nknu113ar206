@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">     <!-- utf-8編碼，中文不會產生亂碼 -->
+        <title>歌名</title> <!-- 網頁標題 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 指定螢幕寬度為裝置寬度，畫面載入初始縮放比例100%-->
+        <meta name="description" content="歌名歌詞"> <!-- 提供搜尋引擎關於網頁頁面內的重要資訊-->
+		   
+        <!--jQuery 語法-->
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"> 
+  	<link rel="stylesheet" href="style.css"> <!-- 將原本上方的style.css，移到jquery-ui.css下方，css設定，以讀取最後的設定為主。-->
+  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  		<script>
+  		$(function() {
+    		$( "main" ).hide();
+    		$( "main" ).fadeIn(2000);
+  		});
+		</script>
+		 <script>
+  		$( function() {
+    		$( "#tabs" ).tabs();
+  		} );
+  		</script>
+</head>
+<body>
+    <!-- 將Tabs內容，放置於html適合的位置，並修改為適合歌詞內容的文字 -->
+
+<div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">tabs-1標題</a></li>
+      <li><a href="#tabs-2">tabs-2標題</a></li>
+      <li><a href="#tabs-3">tabs-3標題</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p> tabs-1內容tabs-1內容tabs-1內容tabs-1內容</p>
+    </div>
+    <div id="tabs-2">
+      <p> tabs-2內容tabs-2內容tabs-2內容tabs-2內容</p>
+    </div>
+    <div id="tabs-3">
+      <p> tabs-3第一段內容</p>
+      <p> tabs-3第二段內容</p>
+    </div>
+  </div>
+</body>
+</html>
