@@ -7,7 +7,28 @@
         <title>一半人生/阿信</title> <!-- 網頁標題 -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 指定螢幕寬度為裝置寬度，畫面載入初始縮放比例100%-->
         <meta name="description" content="一半人生歌詞"> <!-- 提供搜尋引擎關於網頁頁面內的重要資訊-->
+        
+        <!--jQuery 語法-->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+
+
         <link href="style.css" rel="stylesheet">  <!-- 連結到style.css設定視覺規劃 -->
+
+        <script>
+            $(function() {
+                $( "main" ).hide();
+                $( "main" ).fadeIn(2000);
+            });
+        </script>
+        <script>
+            $( function() {
+                $( "#tabs" ).tabs();
+            } );
+  		</script>
     </head>
 <!-- head標頭資訊設定結束
 ================================================== -->   
@@ -32,6 +53,9 @@
             想要唱首歌，去唱哭別人<br>
             最後卻是我，滿臉淚痕<br>
             <p></p>
+            <img src="./img/sky.jpg" alt="" srcset="">
+            <p></p>
+
             早告別青春，活成了別人<br>
             經歷的時代，已如此陌生<br>
             <p></p>
@@ -41,9 +65,30 @@
             我的一半人生 飄蕩就像只風箏<br>
             如果命運是風 什麼又是我的繩<br>
             <p></p>
+
+            <div id="tabs">
+                <ul>
+                  <li><a href="#tabs-1">tabs-1標題</a></li>
+                  <li><a href="#tabs-2">tabs-2標題</a></li>
+                  <li><a href="#tabs-3">tabs-3標題</a></li>
+                </ul>
+                <div id="tabs-1">
+                  <p> tabs-1內容tabs-1內容tabs-1內容tabs-1內容</p>
+                </div>
+                <div id="tabs-2">
+                  <p> tabs-2內容tabs-2內容tabs-2內容tabs-2內容</p>
+                </div>
+                <div id="tabs-3">
+                  <p> tabs-3第一段內容</p>
+                  <p> tabs-3第二段內容</p>
+                </div>
+              </div>
+
             我的一半人生 冷暖就讓我自己過問<br>
             有熱愛有恨 有未知的前程<br>
-            <p></p>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/o22tvGqCz_A?si=FBrb57V96g6Xe5-z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </p>
             <!-- a 超連結設定，需搭配href，target="_blank開啟新視窗--> 
             <a href="https://youtu.be/o22tvGqCz_A" target="_blank">聽歌去</a>  
         </main>
